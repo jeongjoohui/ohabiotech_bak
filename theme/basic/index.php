@@ -10,9 +10,9 @@ if (G5_IS_MOBILE) {
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 
-<h2 class="sound_only">최신글</h2>
+<h2 class="sound_only">메인베너</h2>
 
-<div class="latest_top_wr">
+<!-- <div class="latest_top_wr">
     <?php
     // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
     // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
@@ -21,6 +21,16 @@ include_once(G5_THEME_PATH.'/head.php');
 	echo latest('theme/pic_list', 'qa', 4, 23);			// 최소설치시 자동생성되는 질문답변게시판
 	echo latest('theme/pic_list', 'notice', 4, 23);		// 최소설치시 자동생성되는 공지사항게시판
     ?>
+</div> -->
+<div class="main_banner">
+    <img src="<?php echo G5_IMG_URL ?>/main_banner.png" alt="">
+    <div class="main_txt">
+        <h2>백약99<br>상쾌한 마스크</h2>
+        <h3>100% 국내 제작으로<br>믿고 안심하고 사용하실 수 있습니다.</h3>
+
+        <button class="main_btn">자세히보기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></button>
+    </div>
+
 </div>
 <div class="latest_wr">
     <!-- 사진 최신글2 { -->
@@ -34,7 +44,7 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 <div class="latest_wr">
-<!-- 최신글 시작 { -->
+    <!-- 최신글 시작 { -->
     <?php
     //  최신글
     $sql = " select bo_table
